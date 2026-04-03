@@ -1,0 +1,90 @@
+{
+  "numeric_features": [
+    "HOUR",
+    "MINUTE",
+    "HOUR_SIN",
+    "HOUR_COS",
+    "DAY_OF_WEEK",
+    "LIGHT_CONDITION",
+    "SPEED_ZONE",
+    "IS_PEAK_HOUR",
+    "IS_WEEKEND"
+  ],
+  "categorical_features": [
+    "ROAD_GEOMETRY_DESC",
+    "HIGHWAY",
+    "TIME_OF_DAY",
+    "SPEED_RISK"
+  ],
+  "all_features": [
+    "HOUR",
+    "MINUTE",
+    "HOUR_SIN",
+    "HOUR_COS",
+    "DAY_OF_WEEK",
+    "LIGHT_CONDITION",
+    "SPEED_ZONE",
+    "IS_PEAK_HOUR",
+    "IS_WEEKEND",
+    "ROAD_GEOMETRY_DESC",
+    "HIGHWAY",
+    "TIME_OF_DAY",
+    "SPEED_RISK"
+  ],
+  "target_mapping": {
+    "0": "Severity 1 - Fatal",
+    "1": "Severity 2 - Serious Injury",
+    "2": "Severity 3 - Other Injury",
+    "3": "Severity 4 - Non-Injury"
+  },
+  "road_geometry_options": [
+    "T intersection",
+    "Not at intersection",
+    "Cross intersection",
+    "Multiple intersection",
+    "Unknown",
+    "Y intersection",
+    "Dead end",
+    "Road closure",
+    "Private property"
+  ],
+  "highway_options": [
+    "Mugling-Kurintar",
+    "Nagdhunga-Thankot",
+    "Dharke-Naubise",
+    "Benighat-Malekhu",
+    "Kotre-Jamune",
+    "Naubise-Nagdhunga",
+    "Galchhi-Dharke",
+    "Pokhara-Kotre",
+    "Thankot-Kalanki",
+    "Jamune-Aabukhaireni",
+    "Other"
+  ],
+  "speed_zones": [
+    30,
+    40,
+    50,
+    60,
+    70,
+    75,
+    80,
+    90,
+    100
+  ],
+  "light_conditions": {
+    "1": "Day",
+    "2": "Dusk/Dawn",
+    "3": "Dark \u2013 street lights on",
+    "4": "Dark \u2013 no street lights",
+    "5": "Dark \u2013 street lights off",
+    "6": "Unknown",
+    "9": "Not applicable"
+  },
+  "model_metrics": {
+    "accuracy": 0.3481,
+    "macro_f1": 0.2609,
+    "weighted_f1": 0.3857,
+    "cohen_kappa": 0.0502
+  }
+}
